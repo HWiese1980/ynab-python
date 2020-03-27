@@ -18,7 +18,7 @@ import re  # noqa: F401
 import six
 
 from ynab.api_client import ApiClient
-from ynab.exceptions import (
+from ynab.exceptions import (  # noqa: F401
     ApiTypeError,
     ApiValueError
 )
@@ -90,11 +90,18 @@ class TransactionsApi(object):
 
         local_var_params = locals()
 
-        all_params = ['budget_id', 'data']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
+        all_params = [
+            'budget_id',
+            'data'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
 
         for key, val in six.iteritems(local_var_params['kwargs']):
             if key not in all_params:
@@ -206,11 +213,18 @@ class TransactionsApi(object):
 
         local_var_params = locals()
 
-        all_params = ['budget_id', 'transaction_id']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
+        all_params = [
+            'budget_id',
+            'transaction_id'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
 
         for key, val in six.iteritems(local_var_params['kwargs']):
             if key not in all_params:
@@ -326,11 +340,20 @@ class TransactionsApi(object):
 
         local_var_params = locals()
 
-        all_params = ['budget_id', 'since_date', 'type', 'last_knowledge_of_server']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
+        all_params = [
+            'budget_id',
+            'since_date',
+            'type',
+            'last_knowledge_of_server'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
 
         for key, val in six.iteritems(local_var_params['kwargs']):
             if key not in all_params:
@@ -448,11 +471,21 @@ class TransactionsApi(object):
 
         local_var_params = locals()
 
-        all_params = ['budget_id', 'account_id', 'since_date', 'type', 'last_knowledge_of_server']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
+        all_params = [
+            'budget_id',
+            'account_id',
+            'since_date',
+            'type',
+            'last_knowledge_of_server'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
 
         for key, val in six.iteritems(local_var_params['kwargs']):
             if key not in all_params:
@@ -576,11 +609,21 @@ class TransactionsApi(object):
 
         local_var_params = locals()
 
-        all_params = ['budget_id', 'category_id', 'since_date', 'type', 'last_knowledge_of_server']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
+        all_params = [
+            'budget_id',
+            'category_id',
+            'since_date',
+            'type',
+            'last_knowledge_of_server'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
 
         for key, val in six.iteritems(local_var_params['kwargs']):
             if key not in all_params:
@@ -704,11 +747,21 @@ class TransactionsApi(object):
 
         local_var_params = locals()
 
-        all_params = ['budget_id', 'payee_id', 'since_date', 'type', 'last_knowledge_of_server']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
+        all_params = [
+            'budget_id',
+            'payee_id',
+            'since_date',
+            'type',
+            'last_knowledge_of_server'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
 
         for key, val in six.iteritems(local_var_params['kwargs']):
             if key not in all_params:
@@ -828,11 +881,19 @@ class TransactionsApi(object):
 
         local_var_params = locals()
 
-        all_params = ['budget_id', 'transaction_id', 'data']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
+        all_params = [
+            'budget_id',
+            'transaction_id',
+            'data'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
 
         for key, val in six.iteritems(local_var_params['kwargs']):
             if key not in all_params:
@@ -950,11 +1011,18 @@ class TransactionsApi(object):
 
         local_var_params = locals()
 
-        all_params = ['budget_id', 'data']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
+        all_params = [
+            'budget_id',
+            'data'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
 
         for key, val in six.iteritems(local_var_params['kwargs']):
             if key not in all_params:
